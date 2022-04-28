@@ -30,7 +30,11 @@ I detta projekt så kommer jag skapa ett `Rest API` med hjälp utav `Express`.
 
 ## Hur projektet körs
 
-För att komma igång med projektet så skriver man `npm install` nere i terminalen. Efter alla filer laddats in så skriver man `node index.js` för att starta projektet så att det körs på port `3000`.
+Skriv `cd rest-api`för att ställa dig i mappen.
+
+För att komma igång med projektet så skriver man `npm install` nere i terminalen.
+
+Efter alla filer laddats in så skriver man `node index.js` för att starta projektet så att det körs på port `3000`.
 
 <br>
 

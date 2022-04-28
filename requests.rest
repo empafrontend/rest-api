@@ -1,1 +1,13 @@
-PUT http://localhost:3000/foods/
+GET http://localhost:3000/foods/
+
+###
+
+POST http://localhost:3000/foods/
+
+### 
+
+PUT http://localhost:3000/foods/4
+
+### 
+
+DELETE http://localhost:3000/foods/4
