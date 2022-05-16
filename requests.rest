@@ -1,13 +1,31 @@
-GET http://localhost:3000/foods/
-
+GET http://localhost:3000/foods/ HTTP/1.1
+Content-Type: application/json
 ###
 
-POST http://localhost:3000/foods/
+GET http://localhost:3000/foods/1 HTTP/1.1
+Content-Type: application/json
+###
+
+POST http://localhost:3000/foods HTTP/1.1 
+Content-Type: application/json
+
+{
+    "food":"pizza",
+    "taste":"great",
+    "price":20
+}
 
 ### 
 
-PUT http://localhost:3000/foods/4
+PUT http://localhost:3000/foods/1 HTTP/1.1
+Content-Type: application/json
 
+{
+    "food": "new food",
+    "taste": "new taste",
+    "price": 0
+}
 ### 
 
-DELETE http://localhost:3000/foods/4
+DELETE http://localhost:3000/foods/3 HTTP/1.1
+Content-Type: application/json
