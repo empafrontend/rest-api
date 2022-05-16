@@ -41,7 +41,7 @@ app.post("/foods", (req, res) => {
     }
   );
 
-  return res.send("Food added " + newFood);
+  return res.send("Food added " + JSON.stringify(newFood));
 });
 
 app.put("/foods/:foodID", (req, res) => {
@@ -72,7 +72,9 @@ app.put("/foods/:foodID", (req, res) => {
     }
   );
 
-  return res.json("Yummy Food " + foodID + " new snacks " + yummyFood);
+  return res.json(
+    "Yummy Food " + foodID + " new snacks " + JSON.stringify(yummyFood)
+  );
 });
 
 app.delete("/foods/:foodID", (req, res) => {
