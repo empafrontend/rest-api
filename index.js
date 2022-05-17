@@ -41,7 +41,7 @@ app.post("/foods", (req, res) => {
     }
   );
 
-  return res.send("Food added " + JSON.stringify(newFood));
+  return res.json(newFood);
 });
 
 app.put("/foods/:foodID", (req, res) => {
@@ -72,9 +72,7 @@ app.put("/foods/:foodID", (req, res) => {
     }
   );
 
-  return res.json(
-    "Yummy Food " + foodID + " new snacks " + JSON.stringify(yummyFood)
-  );
+  return res.json(yummyFood);
 });
 
 app.delete("/foods/:foodID", (req, res) => {
@@ -92,9 +90,7 @@ app.delete("/foods/:foodID", (req, res) => {
       console.log("eat your food");
     }
   );
-  return res.json(
-    "Removed ID " + foodID + " new list " + JSON.stringify(yummyFood)
-  );
+  return res.json(foundFood);
 });
 
 app.listen(3000, () => {
